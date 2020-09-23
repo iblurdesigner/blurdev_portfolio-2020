@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;600;800&display=swap");
+
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -10,7 +12,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  font-family: "Baloo Da 2", cursive;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -19,7 +21,7 @@ body {
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
 
-  /* background-color: #1f2441; */
+  background-color: #1f2441;
 }
 article,
 aside,
@@ -120,7 +122,7 @@ img {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  /* margin-bottom: 1.45rem; */
 }
 svg:not(:root) {
   overflow: hidden;
