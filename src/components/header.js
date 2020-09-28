@@ -22,9 +22,6 @@ const Header = () => {
             <Link to="/portfolio">Portfolio</Link>
           </MenuItem>
           <MenuItem margin>
-            <Link to="/productos">Productos</Link>
-          </MenuItem>
-          <MenuItem margin>
             <Link to="/contacto">Contacto</Link>
           </MenuItem>
           {/* <MenuItem>
