@@ -16,13 +16,13 @@ const Header = () => {
       <nav>
         <ul>
           <MenuItem margin>
-            <Link to="/about">About</Link>
+            <Link to="/about/">About</Link>
           </MenuItem>
           <MenuItem margin>
-            <Link to="/portfolio">Portfolio</Link>
+            <Link to="/portfolio/">Portfolio</Link>
           </MenuItem>
           <MenuItem margin>
-            <Link to="/contacto">Contacto</Link>
+            <Link to="/contacto/">Contacto</Link>
           </MenuItem>
           {/* <MenuItem>
             <Link to="/cart">

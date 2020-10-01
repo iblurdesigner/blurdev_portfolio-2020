@@ -4,6 +4,7 @@ import { StyledJumbo2 } from "../styles/components"
 import githubLogo from "../images/github-logo.svg"
 import behance from "../images/behance-logo.svg"
 import linkedin from "../images/linkedin-logo.svg"
+import avatar from "../images/avatar.png"
 
 export default function Jumbo() {
   return (
@@ -21,7 +22,9 @@ export default function Jumbo() {
             Front End Developer / Graphic Designer / Freelancer
           </small>
         </div>
-        <div className="item">imagen</div>
+        <div className="item">
+          <img src={avatar} alt="avatar blur" />
+        </div>
         <div className="item">
           <button>CONTACT ME</button>
         </div>

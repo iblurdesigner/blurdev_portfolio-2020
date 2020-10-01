@@ -158,14 +158,15 @@ export const StyledJumbo = styled.div`
 
 export const StyledJumbo2 = styled.div`
   .container {
-    border: red solid 1px;
+    /* border: red solid 1px; */
     display: grid;
-    width: 960px;
+    width: 75vw;
     height: 550px;
     grid-template-columns: [inicio] 1fr [linea1] 1fr [linea2] 1fr [linea3] 1fr [final];
     grid-template-rows: [inicio] 1fr [linea1] 1fr [linea2] 1fr [final];
     grid-gap: 5px;
     margin: 0 auto;
+    margin: 100px;
   }
   .redes {
     height: 25px;
@@ -178,7 +179,7 @@ export const StyledJumbo2 = styled.div`
   }
 
   .item {
-    border: yellow solid 1px;
+    /* border: yellow solid 1px; */
   }
 
   .item:nth-of-type(1) {
@@ -216,7 +217,7 @@ export const StyledJumbo2 = styled.div`
   }
 
   & button {
-    border: 2px solid ${colors.turkey};
+    /* border: 2px solid ${colors.turkey}; */
     color: ${colors.turkey};
     padding: 0;
     background-color: ${colors.darkBlue};
@@ -252,6 +253,44 @@ export const MenuItem = styled.li`
   `}
 `
 
+export const AboutStyled = styled.div`
+  .container {
+    display: grid;
+    width: 75vw;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 10% 1fr;
+    grid-gap: 5px;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  & h1 {
+    color: white;
+    font-size: 4.4rem;
+  }
+  & p {
+    color: white;
+  }
+  & img {
+    margin-top: 50px;
+  }
+`
+
+export const PortfolioStyled = styled.div`
+  .container {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 4fr;
+    border: 1px solid ${colors.turkey};
+  }
+  .item {
+    border: 1px solid red;
+    color: white;
+  }
+`
+
 export const Footer = styled.footer`
   background-color: ${colors.darkBlue};
   color: white;
@@ -260,6 +299,7 @@ export const Footer = styled.footer`
   align-items: center;
   padding: 2rem;
   position: relative;
+  width: 100vw;
   bottom: 0;
   a {
     color: ${colors.green};
