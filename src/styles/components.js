@@ -282,12 +282,54 @@ export const PortfolioStyled = styled.div`
     width: 100vw;
     height: 100vh;
     grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: minmax(150px, 1fr) 4fr;
     border: 1px solid ${colors.turkey};
   }
   .item {
     border: 1px solid red;
     color: white;
+  }
+
+  .item:nth-of-type(2) {
+    font-size: 4rem;
+    align-self: center;
+  }
+
+  .item:nth-of-type(4) {
+    padding-top: 50px;
+    justify-self: center;
+    list-style-type: none;
+  }
+
+  .item:nth-of-type(5) {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 5px;
+    /* grid-auto-flow: dense; */
+    justify-content: center;
+  }
+  .subitem {
+    display: inline-flex;
+    border-radius: 5px;
+    padding: 10px;
+    background: #f2f2f2;
+  }
+
+  .subitem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Esta propiedad importante*/
+    grid-auto-flow: dense; /* Esta propiedad importante*/
+  }
+
+  .level-1 {
+    grid-row-end: span 3;
+  }
+  .level-2 {
+    grid-row-end: span 2;
+  }
+  .level-3 {
+    grid-row-end: span 1;
   }
 `
 
@@ -298,7 +340,7 @@ export const Footer = styled.footer`
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  position: relative;
+  position: fixed;
   width: 100vw;
   bottom: 0;
   a {
